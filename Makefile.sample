@@ -1,0 +1,3 @@
+TMK_KEYBOARD_DIR ?= /<path>/tmk_keyboard
+# DEV=/dev/ttyACM0
+include Makefile
