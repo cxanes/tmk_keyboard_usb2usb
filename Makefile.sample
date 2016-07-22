@@ -1,4 +1,5 @@
 TMK_KEYBOARD_DIR ?= /<path>/tmk_keyboard
 # DEV=/dev/ttyACM0
 # KEYMAP=pok3r
+# POST_CMD=
 include Makefile
