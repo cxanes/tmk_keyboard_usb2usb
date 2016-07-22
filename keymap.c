@@ -14,7 +14,7 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * ,-----------------------------------------------------------. ,-----------. ,---------------. ,-------.
      * |  `|  1|  2|  3|  4|  5|  6|  7|  8|  9|  0|  -|  =|JPY|Bsp| |Ins|Hom|PgU| |NmL|  /|  *|  -| |Stp|Agn|
      * |-----------------------------------------------------------| |-----------| |---------------| |-------|
-     * |Fn4  |  Q|  W|  E|  R|  T|  Y|  U|  I|  O|  P|  [|  ]|Fn5  | |Del|End|PgD| |  7|  8|  9|  +| |Mnu|Und|
+     * |Fn4  |  Q|  W|  E|  R|  T|  Y|  U|  I|  O|  P|  [|Fn5|  \  | |Del|End|PgD| |  7|  8|  9|  +| |Mnu|Und|
      * |-----------------------------------------------------------| `-----------' |---------------| |-------|
      * |Fn2   |  A|  S|  D|  F|  G|  H|  J|  K|  L|  ;|  :|  #|Retn|               |  4|  5|  6|KP,| |Sel|Cpy|
      * |-----------------------------------------------------------|     ,---.     |---------------| |-------|
@@ -27,7 +27,7 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
               F13, F14, F15, F16, F17, F18, F19, F20, F21, F22, F23, F24,
     ESC,      F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9,  F10, F11, F12,           PSCR,SLCK,PAUS,    VOLD,VOLU,MUTE,PWR,     HELP,
     ESC, 1,   2,   3,   4,   5,   6,   7,   8,   9,   0,   MINS,EQL, JYEN,BSPC,     INS, HOME,PGUP,    NLCK,PSLS,PAST,PMNS,    STOP,AGIN,
-    FN4, Q,   W,   E,   R,   T,   Y,   U,   I,   O,   P,   LBRC,RBRC,     FN5,      DEL, END, PGDN,    P7,  P8,  P9,  PPLS,    MENU,UNDO,
+    FN4, Q,   W,   E,   R,   T,   Y,   U,   I,   O,   P,   LBRC,FN5,      BSLS,     DEL, END, PGDN,    P7,  P8,  P9,  PPLS,    MENU,UNDO,
     FN2, A,   S,   D,   F,   G,   H,   J,   K,   L,   SCLN,QUOT,     NUHS,ENT,                         P4,  P5,  P6,  PCMM,    SLCT,COPY,
     FN0, NUBS,Z,   X,   C,   V,   B,   N,   M,   COMM,DOT, SLSH,     RO,  FN1,           UP,           P1,  P2,  P3,  PEQL,    EXEC,PSTE,
     FN6, LCTL,LALT,MHEN,HANJ,     SPC,      HAEN,HENK,KANA,FN2, RCTL,RALT,RGUI,     LEFT,DOWN,RGHT,    P0,       PDOT,PENT,    FIND,CUT
@@ -139,6 +139,6 @@ const uint16_t PROGMEM fn_actions[] = {
     [2] = ACTION_LAYER_MOMENTARY(3),
     [3] = ACTION_MODS_KEY(MOD_LSFT, KC_INS),  // Shift + Insert
     [4] = ACTION_MODS_TAP_KEY(MOD_LCTL, KC_TAB),
-    [5] = ACTION_MODS_TAP_KEY(MOD_RALT, KC_BSLASH),
+    [5] = ACTION_MODS_TAP_KEY(MOD_RALT, KC_RBRC),
     [6] = ACTION_LAYER_MOMENTARY(4),
 };
