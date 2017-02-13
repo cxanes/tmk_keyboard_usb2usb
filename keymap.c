@@ -160,7 +160,7 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 };
 
-const uint16_t PROGMEM fn_actions[] = {
+const action_t PROGMEM fn_actions[] = {
     [0] = ACTION_LAYER_MODS(2, MOD_LSFT),
     [1] = ACTION_LAYER_MODS(2, MOD_RSFT),
     [2] = ACTION_LAYER_MOMENTARY(3),
