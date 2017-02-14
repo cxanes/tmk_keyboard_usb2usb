@@ -28,8 +28,8 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ESC, 1,   2,   3,   4,   5,   6,   7,   8,   9,   0,   MINS,EQL, JYEN,BSPC,     INS, HOME,PGUP,    NLCK,PSLS,PAST,PMNS,    STOP,AGIN,
     FN4, Q,   W,   E,   R,   T,   Y,   U,   I,   O,   P,   LBRC,FN5,      BSLS,     DEL, END, PGDN,    P7,  P8,  P9,  PPLS,    MENU,UNDO,
     FN2, A,   S,   D,   F,   G,   H,   J,   K,   L,   SCLN,QUOT,     NUHS,ENT,                         P4,  P5,  P6,  PCMM,    SLCT,COPY,
-    FN0, NUBS,Z,   X,   C,   V,   B,   N,   M,   COMM,DOT, SLSH,     RO,  FN1,           PGUP,         P1,  P2,  P3,  PEQL,    EXEC,PSTE,
-    FN6, LCTL,LALT,MHEN,HANJ,     SPC,      HAEN,HENK,KANA,FN2, RCTL,RALT,RGUI,     HOME,PGDN,END,     P0,       PDOT,PENT,    FIND,CUT
+    FN0, NUBS,Z,   X,   C,   V,   B,   N,   M,   COMM,DOT, SLSH,     RO,  FN1,           UP,           P1,  P2,  P3,  PEQL,    EXEC,PSTE,
+    FN6, LCTL,LALT,MHEN,HANJ,     SPC,      HAEN,HENK,KANA,FN2, RCTL,RALT,RGUI,     LEFT,DOWN,RGHT,    P0,       PDOT,PENT,    FIND,CUT
     ),
 
     /* 1: plain Qwerty without layer switching
@@ -103,8 +103,8 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     GRV, F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9,  F10, F11, F12, TRNS,DEL,      TRNS,TRNS,TRNS,    TRNS,TRNS,TRNS,TRNS,    TRNS,TRNS,
     CAPS,PGUP,UP,  PGDN,TRNS,TRNS,CALC,PGUP,HOME,PGDN,PSCR,SLCK,PAUS,     INS,      TRNS,TRNS,TRNS,    TRNS,TRNS,TRNS,TRNS,    TRNS,TRNS,
     TRNS,LEFT,DOWN,RGHT,HOME,INS, LEFT,DOWN,UP,  RGHT,BSPC,DEL,      TRNS,TRNS,                        TRNS,TRNS,TRNS,TRNS,    TRNS,TRNS,
-    TRNS,TRNS,APP, TRNS,END, FN3, TRNS,END, TRNS,TRNS,TRNS,TRNS,     TRNS,TRNS,          TRNS,         TRNS,TRNS,TRNS,TRNS,    TRNS,TRNS,
-    TRNS,TRNS,TRNS,TRNS,TRNS,     TRNS,     TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,     TRNS,TRNS,TRNS,    TRNS,     TRNS,TRNS,    TRNS,TRNS
+    TRNS,TRNS,APP, TRNS,END, FN3, TRNS,END, TRNS,TRNS,TRNS,TRNS,     TRNS,TRNS,          PGUP,         TRNS,TRNS,TRNS,TRNS,    TRNS,TRNS,
+    TRNS,TRNS,TRNS,TRNS,TRNS,     TRNS,     TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,     HOME,PGDN,END,     TRNS,     TRNS,TRNS,    TRNS,TRNS
     ),
 
     /* 4: mouse layer
