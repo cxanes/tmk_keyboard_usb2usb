@@ -3,7 +3,9 @@
  */
 #include "keymap_common.h"
 
-// Move original Fn key to the position of left ctrl
+// Dip switch:
+//  Port |   1   2 |   3 |   4 |  5   6 |
+//       | OFF  ON | OFF | OFF | ON OFF |
 
 const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* 0: remapped Qwerty
@@ -17,11 +19,11 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * |-----------------------------------------------------------| |-----------| |---------------| |-------|
      * |Fn4  |  Q|  W|  E|  R|  T|  Y|  U|  I|  O|  P|  [|Fn5|  \  | |Del|End|PgD| |  7|  8|  9|  +| |Mnu|Und|
      * |-----------------------------------------------------------| `-----------' |---------------| |-------|
-     * |Fn2   |  A|  S|  D|  F|  G|  H|  J|  K|  L|  ;|  :|  #|Retn|               |  4|  5|  6|KP,| |Sel|Cpy|
+     * |CapsL |  A|  S|  D|  F|  G|  H|  J|  K|  L|  ;|  :|  #|Retn|               |  4|  5|  6|KP,| |Sel|Cpy|
      * |-----------------------------------------------------------|     ,---.     |---------------| |-------|
      * |Fn0 |  <|  Z|  X|  C|  V|  B|  N|  M|  ,|  ,|  /| RO|Fn1   |     |Up |     |  1|  2|  3|KP=| |Exe|Pst|
      * |-----------------------------------------------------------| ,-----------. |---------------| |-------|
-     * |Gui|Ctl|Alt|MHEN|HNJ| Space  |H/E|HENK|KANA|Fn2|Ctl|Fn6|Gui| |Lef|Dow|Rig| |  0    |  .|Ent| |Fnd|Cut|
+     * |Fn2|Ctl|Alt|MHEN|HNJ| Space  |H/E|HENK|KANA|Fn2|Ctl|Fn6|Gui| |Lef|Dow|Rig| |  0    |  .|Ent| |Fnd|Cut|
      * `-----------------------------------------------------------' `-----------' `---------------' `-------'
      */
     KEYMAP_ALL(
@@ -29,9 +31,9 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ESC,      F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9,  F10, F11, F12,           PSCR,SLCK,PAUS,    VOLD,VOLU,MUTE,PWR,     HELP,
     ESC, 1,   2,   3,   4,   5,   6,   7,   8,   9,   0,   MINS,EQL, JYEN,BSPC,     INS, HOME,PGUP,    NLCK,PSLS,PAST,PMNS,    STOP,AGIN,
     FN4, Q,   W,   E,   R,   T,   Y,   U,   I,   O,   P,   LBRC,FN5,      BSLS,     DEL, END, PGDN,    P7,  P8,  P9,  PPLS,    MENU,UNDO,
-    FN2, A,   S,   D,   F,   G,   H,   J,   K,   L,   SCLN,QUOT,     NUHS,ENT,                         P4,  P5,  P6,  PCMM,    SLCT,COPY,
+    CAPS,A,   S,   D,   F,   G,   H,   J,   K,   L,   SCLN,QUOT,     NUHS,ENT,                         P4,  P5,  P6,  PCMM,    SLCT,COPY,
     FN0, NUBS,Z,   X,   C,   V,   B,   N,   M,   COMM,DOT, SLSH,     RO,  FN1,           UP,           P1,  P2,  P3,  PEQL,    EXEC,PSTE,
-    LGUI,LCTL,LALT,MHEN,HANJ,     SPC,      HAEN,HENK,KANA,FN2, RCTL,FN6, RGUI,     LEFT,DOWN,RGHT,    P0,       PDOT,PENT,    FIND,CUT
+    FN2, LCTL,LALT,MHEN,HANJ,     SPC,      HAEN,HENK,KANA,FN2, RCTL,FN6, RGUI,     LEFT,DOWN,RGHT,    P0,       PDOT,PENT,    FIND,CUT
     ),
 
     /* 1: plain Qwerty without layer switching
